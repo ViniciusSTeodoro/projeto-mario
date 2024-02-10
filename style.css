@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+.mascara-formulario {
+    visibility: hidden;
+    transition: visibility 1s linear;
+    z-index: 3;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+
+}
+
+.header img {
+    height: 60px;
+    z-index: 1;
+}
+
+.header a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.header a:hover {
+    color: #C51111;
+    font-size: 25px;
+    transition: 0.5s ease-in-out;
+}
+
+
+.caixa-mae {
+   display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+
+}
+
+.caixa-principal {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+video {
+    height: auto;
+    width: auto;
+    min-width: 100%;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mascara-video {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+.caixa {
+    display: flex;
+    color: white;
+    padding: 30%;
+    flex-direction: column;
+    padding-top: 20%;
+    padding-left: 10%;
+
+
+}
+
+.logo {
+    height: 150px;
+    margin-bottom: 20px;
+
+}
+
+.logo-mario {
+    height: 500px;
+    padding-right: 50%;
+    margin-bottom: 100px;
+    margin-right: 200px;
+
+}
+
+p {
+    color: white;
+    font-size: 15px;
+}
+
+
+
+button {
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0;
+    padding: 10px 0;
+    border-radius: 3px;
+    background-color: #C51111;
+    width: 200px;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    justify-content: space-between;
+
+
+}
+
+.botao :hover {
+    color: black;
+    transform: scale(1.5);
+    transition: transform 0.5 ease-in-out;
+}
+
+
+
+.link-whatsapp img {
+    height: 100px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+.formulario-fale-conosco {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 17px;
+    border-radius: 10px;
+    gap: 20px;
+    left: -300px;
+    transition: left 1s linear;
+    z-index: 6;
+
+
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18D80F;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18D80F;
+}
+
+@media(max-width: 1100px) {
+
+    p { 
+        display: none;
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        padding: 10px;
+        
+    }
+
+    .caixa{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 200px;
+    }
+ 
+    .logo{
+        padding: 10px;
+        position: relative;
+        top: 10px;
+    }
+
+    .logo-mario{
+      height: 300px;
+      margin-left: 125px;
+      margin-bottom: 450px
+      
+
+    }
+
+    button{
+        margin-top: 20px;
+    }
+
+    video{
+        max-width: none;
+        height: 100vh;
+       
+    }
+
+    .header{
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header img{
+        display: none;
+
+    }
+
+    .header a{
+        font-size: 18px;
+    }
+
+}
+
+/* 
+Inicial
+left: -300px;
+
+
+Final
+top: 30%;
+left: 50%;
+transforme: translateX(-50%);
+
+
+*/
+
+/*media query
+ 
+
+*/
